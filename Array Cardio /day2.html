@@ -26,6 +26,8 @@
 
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
+    const nineteen = (element) => ((new Date().getFullYear()) - element.year) > 18
+    console.log(people.some(nineteen))
     // Array.prototype.every() // is everyone 19 or older?
 
     // Array.prototype.find()
